@@ -1,0 +1,100 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Definiamo le variabili per il tema */
+  --text-color: rgba(255, 255, 255, 0.87);
+  --bg-color: #242424;
+  --button-bg: #1a1a1a;
+  --icon-color: yellow;
+  --sun-color: yellow; /* Sole giallo */
+  --moon-color: black; 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  background-color: var(--button-bg);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #213547;
+    --bg-color: #ffffff;
+    --button-bg: #f9f9f9;
+    --icon-color: black;
+    --sun-color: yellow;
+    --moon-color: black;
+
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Stili per il bottone del tema */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  color: var(--icon-color); /* Colore dinamico per l'icona */
+}
+
+.dark-mode {
+  --sun-color: yellow;
+  --moon-color: white;
+}
+
+.theme-toggle .sun-icon {
+  color: var(--sun-color); /* Colore dinamico per il sole */
+}
+
+.theme-toggle .moon-icon {
+  color: var(--moon-color); /* Colore dinamico per la luna */
+}

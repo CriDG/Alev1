@@ -1,0 +1,76 @@
+.products-wrapper {
+    display: flex;
+    overflow-x: auto;  /* Abilita lo scroll orizzontale */
+    gap: 15px;  /* Aumenta la distanza tra le card per un aspetto più leggibile */
+    padding: 5px;
+  }
+  
+  .product-card {
+    width: 400px;  /* Aumenta la larghezza della card da 100px a 160px */
+    padding: 5px;  /* Più spazio interno per migliorare la leggibilità */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    flex-shrink: 0; /* Evita che le card si comprimano troppo */
+    min-height: 400px;
+  }
+
+  /* .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+   */
+  .product-image {
+    width: 380px;  /* Aumenta la dimensione dell'immagine da 50px a 80px */
+    height: 500px;
+    object-fit: cover; /* Mantiene la proporzione dell'immagine senza distorsioni */
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .product-title {
+    font-size: 14px; /* Aumenta la grandezza del titolo */
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .product-description {
+    font-size: 12px; /* Testo leggermente più grande per migliorare la leggibilità */
+    color: #555;
+    margin-top: -15px; /* Tolto lo spazio sopra la descrizione */
+    margin-bottom: 5px;  /* Ridotto lo spazio sotto la descrizione */
+  }
+  
+  .product-footer {
+    display: flex;
+    justify-content: space-between; /* Allinea prezzo e bottone sui lati opposti */
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    color: pink; /* Colore blu per evidenziare il prezzo */
+  }
+  
+
+  .details-box {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #f4f4f4; /* Sfondo grigio chiaro */
+    border-left: 5px solid #4CAF50; /* Bordo colorato */
+    font-size: 18px;
+    color: #333; /* Testo scuro */
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+    
+  }
+ 
